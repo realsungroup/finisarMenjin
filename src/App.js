@@ -236,7 +236,11 @@ class App extends Component {
           filterMultiple: true,
           onFilter: (value, record) =>
             record.C3_595168410919.indexOf(value) === 0,
-          sorter: (a, b) => a.C3_595168410919.length - b.C3_595168410919.length
+          sorter: (a, b) => {
+            if (a.C3_595168410919 && b.C3_595168410919) {
+              return a.C3_595168410919.length - b.C3_595168410919.length;
+            }
+          }
         },
         {
           title: '确认无误',
