@@ -251,7 +251,15 @@ class App extends Component {
           filterMultiple: true,
           onFilter: (value, record) =>
             record.C3_595192402751.indexOf(value) === 0,
-          sorter: (a, b) => a.C3_595192402751.length - b.C3_595192402751.length
+          sorter: (a, b) => {
+            if (a.C3_595192402751 !== b.C3_595192402751) {
+              return -1;
+            } else if (a.C3_595192402751 === b.C3_595192402751) {
+              return 0;
+            } else {
+              return 1;
+            }
+          }
         }
       ]
     });
