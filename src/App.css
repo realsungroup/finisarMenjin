@@ -17,30 +17,28 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.tab{
-  width:80%;
+.tab {
+  width: 80%;
   text-align: center;
   margin-left: 10%;
 }
-.btns{
-  width:80%;
+.btns {
+  width: 80%;
   margin-left: 10%;
   margin-top: 5%;
 }
-.btn-approve{
+.btn-approve {
   margin: 5px;
-  margin-left: 70%
-  
 }
 
-.btn-reject{
+.btn-reject {
   margin: 5px;
 }
-.btn-export{
+.btn-export {
   margin: 5px;
 }
-.btn-search{
-  width:100px
+.btn-search {
+  width: 100px;
 }
 
 .App-link {
