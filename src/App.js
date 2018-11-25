@@ -216,7 +216,8 @@ class App extends Component {
           filterMultiple: true,
           onFilter: (value, record) =>
             record.C3_595166775274.indexOf(value) === 0,
-          sorter: (a, b) => a.C3_595166775274.length - b.C3_595166775274.length
+          sorter: (a, b) =>
+            parseInt(a.C3_595166775274, 10) - parseInt(b.C3_595166775274, 10)
         },
         {
           title: '管理员姓名',
@@ -237,9 +238,9 @@ class App extends Component {
           onFilter: (value, record) =>
             record.C3_595168410919.indexOf(value) === 0,
           sorter: (a, b) => {
-            if (a.C3_595168410919 && b.C3_595168410919) {
-              return a.C3_595168410919.length - b.C3_595168410919.length;
-            }
+            const aLen = a.C3_595168410919 ? a.C3_595168410919.length : 0;
+            const bLen = b.C3_595168410919 ? b.C3_595168410919.length : 0;
+            return aLen - bLen;
           }
         },
         {
