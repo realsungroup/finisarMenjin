@@ -1,6 +1,6 @@
 const appConfig = {
     path: {
-      baseUrl: 'http://114.55.58.57:9095/', // 基地址
+      baseUrl: 'http://10.108.2.66:9091/', // 基地址
       getWorkbenchApps: 'api/Resource/RetrieveUserDesktop',
       getAllOptionalApps: 'api/Resource/RetrieveUserAppLinks',
       getData: 'api/100/table/Retrieve',

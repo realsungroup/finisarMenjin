@@ -98,6 +98,19 @@ export const modRecord = (resid, data) => {
   return dealNextExtractData(http(url, POST, params, dataType.FixOneDataEM));
 };
 
+//添加记录
+export const addRecord = (resid, data) => {
+  const url = baseUrl + appConfig.path.saveData;
+  const params = {
+    resid,
+    data
+  };
+  return dealNextExtractData(http(url, POST, params, dataType.AddOneDataEM));
+};
+
+
+
+
 // 修改多条记录
 export const modRecords = (resid, data) => {
   const url = baseUrl + appConfig.path.saveData;

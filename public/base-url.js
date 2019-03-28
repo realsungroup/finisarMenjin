@@ -10,7 +10,8 @@
 /**
  * 考勤管理
  */
-// window.baseUrl = 'http://kingofdinner.realsun.me:8102/';
+// window.baseUrl = 'http://kingofdinner.realsun.me:8102/';   
+// window.baseUrl = 'http://pwhrapi1.realsun.me/'; 
 
 //
 window.baseUrl = 'http://10.108.2.66:9091/'
